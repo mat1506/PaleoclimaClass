@@ -1,0 +1,16 @@
+name: paleoclima_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - matplotlib
+  - r-base
+  - r-ggplot2
+  - r-dplyr
+  - jupyter
+  - ipykernel
+  - rpy2  # Para integrar R y Python
+

@@ -11,3 +11,6 @@ pip install --no-cache-dir pyleoclim
 # Imprimir un mensaje indicando que el entorno está listo
 echo "Binder environment is ready!"
 
+conda install mamba -n base -c conda-forge
+mamba env update -n cpaleo --file environment.yml
+

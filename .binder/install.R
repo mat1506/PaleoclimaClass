@@ -14,6 +14,6 @@ install.packages("neotoma2")
 remotes::install_github("nickmckay/lipdR",force = TRUE)
 remotes::install_github("nickmckay/geoChronR",force = TRUE)
 install.packages("IRkernel")
-
+IRkernel::installspec()
 
 

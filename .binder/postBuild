@@ -1,0 +1,9 @@
+#!/bin/bash
+# Instalar y registrar el kernel de R
+R -e "IRkernel::installspec(user = FALSE)"
+
+# Instalar paquetes de Python faltantes
+pip install --no-cache-dir pyleoclim
+
+# Imprimir un mensaje indicando que el entorno está listo
+echo "Binder environment is ready!"

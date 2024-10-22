@@ -8,4 +8,8 @@ python -m ipykernel install --name cpaleo --display-name "Python 3 (cpaleo)"
 # Imprimir un mensaje indicando que todo está listo
 echo "Todos los kernels están instalados y listos para usar."
 
-
+# Install a JupyterLab extension for demonstration purposes
+jupyter labextension install @jupyterlab/geojson-extension jupyterlab-drawio
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38 --minimize=False

@@ -2,4 +2,9 @@ numpy
 pandas
 matplotlib
 pyleoclim
-
+traitlets>=4.3.1
+vdom
+jupyterlab_launcher>=0.5.0
+ipython
+ipywidgets
+jupyter_contrib_nbextensions

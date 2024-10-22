@@ -1,6 +1,6 @@
 #!/bin/bash
 # Instalar y registrar el kernel de R
-R -e "IRkernel::installspec(user = FALSE)"
+R -e "IRkernel::installspec(user = TRUE)"
 
 # Instalar paquetes de Python faltantes
 pip install --no-cache-dir pyleoclim

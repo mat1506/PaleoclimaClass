@@ -1,16 +1,11 @@
 #!/bin/bash
-# Instalar y registrar el kernel de R
+# Registrar el kernel de R
 R -e "IRkernel::installspec(user = FALSE)"
 
-# Instalar el kernel de Python (opcional)
-python -m ipykernel install --sys-prefix
+# Registrar el kernel de Python (ya debería estar por defecto, pero se asegura)
+python -m ipykernel install --name cpaleo --display-name "Python 3 (cpaleo)"
 
-# Instalar paquetes de Python faltantes
-pip install --no-cache-dir pyleoclim
+# Imprimir un mensaje indicando que todo está listo
+echo "Todos los kernels están instalados y listos para usar."
 
-# Imprimir un mensaje indicando que el entorno está listo
-echo "Binder environment is ready!"
-
-conda install mamba -n base -c conda-forge
-mamba env update -n cpaleo --file environment.yml
 
